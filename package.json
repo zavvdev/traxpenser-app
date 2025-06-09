@@ -9,7 +9,10 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prettier": "npx prettier --check .",
+    "prettify": "npx prettier --write .",
+    "analyze": "npm run prettier && npm run lint"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
@@ -44,7 +47,10 @@
     "@types/react": "~19.0.10",
     "eslint": "^9.25.0",
     "eslint-config-expo": "~9.2.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
     "husky": "^9.1.7",
+    "prettier": "3.5.3",
     "typescript": "~5.8.3"
   },
   "private": true
